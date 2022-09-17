@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <!--fonts links-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/87ed063510.js" crossorigin="anonymous"></script>
+    
+    
+</head>
+<body>
+    <div id="lala">
+        <div style="background-image: url(./wallpaper.jpg); height: 100vh; width: 100vw; background-size: cover; background-repeat: no-repeat; position: absolute; z-index: 8;">
+
+        </div>
+        <div style="height: 100vh; width: 100%; background-image: url(./wallpaper.jpg); background-size:cover; background-repeat: no-repeat; position: absolute; z-index: 10;" id="click-page">
+            <div style="display: flex; justify-content: center; align-items: center; height: 90vh; width: 100vw; ">
+    
+            </div>
+            <div style="height: 10vh; display: flex; justify-content: flex-end; align-items: center;" id="sign-in-logo">
+                <i class="fa-solid fa-wifi ii"></i>
+                <i class="fa-solid fa-message ii"></i>
+                <i class="fa-solid fa-power-off ii"></i>
+            </div>
+        </div>
+        <div style="position: absolute; z-index: 11; width: 100vw; display: none; height: 100vh;" id="signin-page">
+            <div style="height: 90vh; width: 100vw; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <img class="profile-pic" src="./278035891_546048340274625_7275841572219338922_n.jpg" alt="" style="height: 18vh; width: 18vh; border-radius: 50%; margin-bottom: 4vh;">
+                <button class="btn btn-dark" id="sign-in-button">SIGN IN</button>
+            </div>
+            <div style="height: 10vh; display: flex; justify-content: flex-end; align-items: center;" id="sign-in-logo">
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-message"></i>
+                <i class="fa-solid fa-power-off"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- home window -->
+
+    <div style="position: absolute; z-index: 1; height: 100vh; width: 100vw; background-image: url(./wallpaper2.jpg); background-size: cover; background-repeat: no-repeat;">
+
+        <div id="home" style="position: absolute; z-index: 2;">
+
+            <div style="height: 95vh; width:9vh; display: flex; flex-direction: column; pad: 1vh; align-items: center;" >
+                <div style="width: 7vh;">
+                        <img src="./this pc.png" alt="" style="height: 6vh; width: 6vh; margin-top: 2vh; margin-bottom: 2vh; "  id="this-pc">
+                </div>
+                <div style="width: 7vh;">
+                    <img src="./images/Recycle-bin-windows-11-icon.png" alt="" style="height: 6vh; width: 6vh; margin-bottom: 2vh;">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="taskbar" style="position: absolute; z-index: 3; bottom: 0; display: none; opacity: 0.9;">
+            <div style="height: 5vh; width: 100vw; display: flex; justify-content: center; align-items: center;">
+                <div style="height: 4vh; width: 4vh; border-radius: 5%; display: flex; justify-content: center; align-items: center; margin-left: 0.5vh; margin-right: 0.5vh;" class="img" id="windows-icon">
+                    <img src="./Windows 11 Icon.png" alt="" style="height: 3vh; width: 3vh;" class="img">
+                </div>
+                <div style="height: 4vh; width: 4vh; border-radius: 5%; display: flex; justify-content: center; align-items: center; margin-left: 0.5vh; margin-right: 0.5vh;" class="img" id="windows-icon">
+                    <i class="fa-solid fa-magnifying-glass" style="font-size: 1.5rem; color: white; transform: rotate(90deg);"></i>
+                </div>
+                <div style="display: none;" id="file-explorer-bar">
+                    <div style="height: 4vh; width: 4vh; border-radius: 5%; display: flex; justify-content: center; align-items: center; margin-left: 0.5vh; margin-right: 0.5vh; background-color: #595260;" class="img" id="windows-icon">
+                        <img src="./images/File-Explorer-fluent-icon.png" alt="" style="height: 3vh; width: 3vh;" class="img">
+                    </div>
+                </div>
+                <div style="height: 4vh; width: 4vh; border-radius: 5%; display: flex; justify-content: center; align-items: center; margin-left: 0.5vh; margin-right: 0.5vh;" class="img" id="windows-icon">
+                    <img src="./images/WIndows-Terminal-icon.png" alt="" style="height: 4.7vh; width: 4.7vh;" class="img" id="cmd-btn">
+                </div>
+            </div>
+        </div>
+        <div id="shadow-taskbar" style="position: absolute; z-index: 2; height: 6vh; width: 100vw; bottom: 0;"> 
+
+        </div>
+    
+    </div>
+
+    <section id="my-pc" style="height: 100vh; width: 100vw; position: absolute; z-index: 6; display: none;">
+
+        <div style="height: 100%; width: 100%; background-color: #171717;">
+
+            <!--my pc bar-->
+            <div id="my-pc-bar" style="height: 10vh; width: 100vw;">
+                <div style="height: 3vh; width: 100%; display: flex; justify-content: space-between;">
+                    <div style="display: flex; padding-top: 0.6vh; padding-left: 0.5vh; justify-content:last baseline;">
+                        <img src="./this pc.png" alt="" style="height: 2.3vh; margin-right: 0.5vh;">
+                        <p style="color: white; font-family: 'Roboto', sans-serif; font-size: 0.8rem;">This PC</p>
+                    </div>
+                    <div style="display: flex; justify-content: flex-end;">
+                        <div style="height: 3.5vh; width: 6vh; display: flex; justify-content: center; align-items: center; font-size: 0.9rem; text-align: inherit;" id="my-pc-minimize-button">
+                            <i class="fa-solid fa-window-minimize" style="color: white; text-align: center;"></i>
+                        </div>
+                        <div style="height: 3.5vh; width: 6vh; justify-content: center; align-items: center; font-size: 1.1rem; display: flex;" id="my-pc-close-button">
+                            <i class="fa-solid fa-xmark" style="color: white; text-align: center; position: relative; top: 5px;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style=" border: 1px solid white; background-color: white;">
+
+        </div>
+
+    </section>
+
+    <section id="command-prompt" style="position: absolute; bottom: 200px; right:150px; z-index: 6; display: none;">
+        <div style="height: 53vh; width:85vh; display: flex; background-color: black; border-radius: 15px; border: solid 2.5px white; flex-direction: column; overflow: hidden;">
+            <div id="cmd-bar" style="height: 4vh; width: 100%; background-color: rgb(44, 44, 255); padding-left: 1vh;">
+                <p style="color: white; position: relative; top: 0.6vh; display: block;"><img src="./images/WIndows-Terminal-icon.png" alt="" style="height: 3vh; width: 3vh;"> Administrator's Command Prompt</p>
+            </div>
+            <div id="cmd-body" style="padding-right: 0.5vh;">
+                <p style="color: white; font-size: 0.8rem;">Microsoft Windows [Version 10.0.22000.856]<br>
+                (c) Microsoft Corporation. All rights reserved.</p>
+                <br>
+                <p  style="color: white; font-size: 0.8rem;">C:\User\<span>Yashraj> <input type="text" style="border: none; background-color: black; color: white; font-size: 0.8rem;" id="cmd-input"></span></p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Home Window ends-->
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./css/bootstrap.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

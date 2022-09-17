@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+}
+
+#sign-in-logo i{
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 3vh;
+}
+
+#sign-in-windows{
+    font-size: 1.3rem;
+    border-radius: 10%;
+    background-color: grey;
+    opacity: 0.8;
+}
+
+@keyframes blur {
+    0%{
+        filter: blur(0px);
+    }
+    100%{
+        filter: blur(8px);
+    }
+}
+
+#home{
+    width: 100vw;
+    height: 95vh;
+}
+
+#taskbar{
+    width: 100vw;
+    height: 5vh;
+    background-color: rgb(35, 32, 32);
+}
+
+#windows-icon:hover{
+    background-color: #595260;
+}
+
+#my-pc-close-button:hover{
+    background-color: red;
+}
+
+#my-pc-minimize-button:hover{
+    background-color: grey;
+}
